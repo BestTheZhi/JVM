@@ -54,6 +54,8 @@ https://www.bilibili.com/video/BV1PJ411n7xZ?p=13&share_source=copy_web
 
 官方出的JVM的规范:
 
+[官方文档](https://docs.oracle.com/javase/specs/jvms/se8/html/index.html)
+
 **Java Language and Virtual Machine Specifications**
 
 ![2](https://gitee.com/bestthezhi/images/raw/master/jvm/2.png)
