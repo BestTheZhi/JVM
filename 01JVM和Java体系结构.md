@@ -21,7 +21,7 @@
 
 
 
-![1](https://gitee.com/bestthezhi/images/raw/master/jvm/1.png)
+![1](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/1.png)
 
 
 
@@ -58,13 +58,13 @@ https://www.bilibili.com/video/BV1PJ411n7xZ?p=13&share_source=copy_web
 
 **Java Language and Virtual Machine Specifications**
 
-![2](https://gitee.com/bestthezhi/images/raw/master/jvm/2.png)
+![2](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/2.png)
 
 
 
 ### 2.3 参考书目：
 
-![3](https://gitee.com/bestthezhi/images/raw/master/jvm/3.png)
+![3](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/3.png)
 
 
 
@@ -99,7 +99,7 @@ Java程序编译成字节码文件(.class)之后，在不同平台的JVM上都�
 
 可以说 Java语言的跨平台性，归功于JVM
 
-![4](https://gitee.com/bestthezhi/images/raw/master/jvm/4.png)
+![4](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/4.png)
 
 
 
@@ -113,7 +113,7 @@ java虚拟机的强大，使得许多语言也使用着JVM
 - 随着Java7的正式发布，Java虚拟机的设计者们通过JSR-292规范基本实现在Java虚拟机平台上运行非Java语言编写的程序。
 - Java虚拟机根本不关心运行在其内部的程序到底是使用何种编程语言编写的，它只关心“字节码”文件。也就是说Java虚拟机拥有语言无关性，并不会单纯地与Java语言“终身绑定”，只要其他编程语言的编译结果满足并包含Java虚拟机的内部指令集、符号表以及其他的辅助信息，它就是一个有效的字节码文件，就能够被虚拟机所识别并装载运行。
 
-![5](https://gitee.com/bestthezhi/images/raw/master/jvm/5.png)
+![5](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/5.png)
 
 
 
@@ -133,7 +133,7 @@ Java虚拟机非常复杂，要想真正理解它的工作原理，最好的方�
 
 **天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣**
 
-![6](https://gitee.com/bestthezhi/images/raw/master/jvm/6.png)
+![6](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/6.png)
 
 
 
@@ -162,7 +162,7 @@ Java虚拟机非常复杂，要想真正理解它的工作原理，最好的方�
 
 
 
-![7](https://gitee.com/bestthezhi/images/raw/master/jvm/7.png)
+![7](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/7.png)
 
 在JDK11之前，OracleJDK中还会存在一些OpenJDK中没有的、闭源的功能。但在JDK11中，我们可以认为OpenJDK和OracleJDK代码实质上已经完全一致的程度。
 
@@ -198,11 +198,11 @@ Java虚拟机非常复杂，要想真正理解它的工作原理，最好的方�
 
 **JVM是运行在操作系统之上的，它与硬件没有直接的交互**
 
-![8](https://gitee.com/bestthezhi/images/raw/master/jvm/8.png)
+![8](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/8.png)
 
 Java的体系结构：
 
-![9](https://gitee.com/bestthezhi/images/raw/master/jvm/9.png)
+![9](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/9.png)
 
 
 
@@ -215,13 +215,13 @@ Java的体系结构：
 
 
 
-![10](https://gitee.com/bestthezhi/images/raw/master/jvm/10.png)
+![10](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/10.png)
 
 
 
 ### 4.5 Java代码的执行流程
 
-![11](https://gitee.com/bestthezhi/images/raw/master/jvm/11.png)
+![11](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/11.png)
 
 
 

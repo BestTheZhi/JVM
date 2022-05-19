@@ -121,7 +121,7 @@ jps
 jinfo -flag StringTableSize
 ```
 
-![WM-Screenshots-20220420202755](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/WM-Screenshots-20220420202755.png)
+![WM-Screenshots-20220420202755](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/WM-Screenshots-20220420202755.png)
 
 - 可以看到默认长度就是60013
 - 设置JVM参数
@@ -132,7 +132,7 @@ jinfo -flag StringTableSize
 
 - 结果报错
 
-![dd35](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/dd35.png)
+![dd35](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/dd35.png)
 
 StringTable 大小为 1000 无效；必须介于 1009 和 2305843009213693951 之间
 
@@ -275,11 +275,11 @@ public class StringTest2 {
   - 字符串常量池概念原本使用得比较多，但是这个改动使得我们有足够的理由让我们重新考虑在Java 7中使用String.intern()
 - Java8元空间，字符串常量在堆空间中
 
-![f354](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/f354.png)
+![f354](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/f354.png)
 
-![d60d](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/d60d.png)
+![d60d](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/d60d.png)
 
-![ca6e](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/ca6e.png)
+![ca6e](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/ca6e.png)
 
 
 
@@ -329,7 +329,7 @@ public class StringTest3 {
 
 - 可以看到OOM是发生在堆空间中，所以字符串常量池在JDK8中确实是存在堆空间中的
 
-![aa72](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/aa72.png)
+![aa72](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/aa72.png)
 
 
 
@@ -371,19 +371,19 @@ public class StringTest4 {
 - 对一些代码进行打断点操作
 - 初始化有 1230 个字符串
 
-![f019](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/f019.png)
+![f019](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/f019.png)
 
 - 执行字符串”1”，可以发现字符串数量变成了1231个
 
-![1589](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/1589.png)
+![1589](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/1589.png)
 
 - 执行字符串”10”，可以发现字符串数量变成了1240个
 
-![8bbb](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/8bbb.png)
+![8bbb](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/8bbb.png)
 
 - 下面相同的字符串都在字符串常量池加载过一次了，所以下面相同的字符串都不会再被加载了
 
-![25d5](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/25d5.png)
+![25d5](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/25d5.png)
 
 
 
@@ -407,7 +407,7 @@ class Memory {
 }
 ```
 
-![1182](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/1182.png)
+![1182](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/1182.png)
 
 
 
@@ -490,11 +490,11 @@ public void test3(){
 
 - 反编译字节码文件
 
-![d698](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/d698.png)
+![d698](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/d698.png)
 
 可以看到 String s4 = s1 + s2; 相当于new了一个 StringBuilder，然后使用append拼接 s1 和 s2 字符串，最后再使用toString( )方法约等于new 了一个String对象存放在堆中，这里要和字符串常量池区分开，s3存放在字符串常量池中，s4存放在堆中，所以 s3 不等于 s4
 
-![WM-Screenshots-20220420211807](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/WM-Screenshots-20220420211807.png)
+![WM-Screenshots-20220420211807](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/WM-Screenshots-20220420211807.png)
 
 
 
@@ -627,7 +627,7 @@ String myInfo = new string("I love alibaba").intern();
  */
 ```
 
-![2714](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/2714.png)
+![2714](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/2714.png)
 
 
 
@@ -649,7 +649,7 @@ public class StringNewTest {
 
 - 我们转换成字节码来查看
 
-![b934](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/b934.png)
+![b934](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/b934.png)
 
 这里面就是两个对象
 
@@ -717,7 +717,7 @@ public String toString() {
 
 - 我们转换成字节码来查看
 
-![dc20](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/dc20.png)
+![dc20](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/dc20.png)
 
 - **可以看到toString( )里面只是new了一个String对象，并没有存放到字符串常量池中**
 
@@ -819,17 +819,17 @@ public class StringExer1 {
 }
 ```
 
-![52dd](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/52dd.png)
+![52dd](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/52dd.png)
 
 
 
-![473a](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/473a.png)
+![473a](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/473a.png)
 
 
 
 2.练习2
 
-![1c0f](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/1c0f.png)
+![1c0f](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/1c0f.png)
 
 
 
@@ -904,11 +904,11 @@ public class StringIntern2 {
 
 - 不使用intern的情况下，内存中存在1千多万个String的实例对象
 
-![625c](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/625c.png)
+![625c](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/625c.png)
 
 - 使用intern的情况下，内存中只有2百多万个String的实例对象
 
-![af09](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/af09.png)
+![af09](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/af09.png)
 
 > vm options : -XX:+PrintGCDetails
 >
@@ -943,7 +943,7 @@ public class StringGCTest {
 }
 ```
 
-![138b](https://cdn.jsdelivr.net/gh/bestthezhi/images@master/jvm/138b.png)
+![138b](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/138b.png)
 
 String.valueOf() 底层new String();
 
