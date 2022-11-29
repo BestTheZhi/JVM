@@ -15,14 +15,11 @@ public class Test {
 
 
     public static void main(String[] args) {
-        String s3 = new String("adb");
-        s3.intern(); //
-        String s = "adb";
-        String s1 = s.replace('a','b');  //new String("bdb") //也没有在pool中生成bdb
-        s1.intern();  //
-        String s2 = "bdb";
-        System.out.println(s2 == s1);
-        System.out.println(s == s3);
+        Long id = 1000L;
+//        String s2 = "1000";
+        String s = id.toString();
+        String s1 = s.intern();
+        System.out.println(s1 == s);
     }
 
 }

@@ -387,27 +387,12 @@ public class StringTest4 {
 
 
 
-2.代码示例2
-
-```java
-class Memory {
-
-    public static void main(String[] args) {//line 1
-        int i = 1;//line 2
-        Object obj = new Object();//line 3
-        Memory mem = new Memory();//line 4
-        mem.foo(obj);//line 5
-    }//line 9
-
-    private void foo(Object param) {//line 6
-        String str = param.toString();//line 7
-        System.out.println(str);
-    }//line 8
-
-}
+```tex
+对于直接声明的字符串，形如：String x = ""; 则变量x直接指向常量池中；
+对于new出来的字符串，new String(""); 则存储于堆中，但存储的是指向常量池的引用；
 ```
 
-![1182](https://images.weserv.nl/?url=raw.githubusercontent.com/BestTheZhi/images/master/jvm/1182.png)
+
 
 
 
